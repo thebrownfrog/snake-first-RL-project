@@ -120,7 +120,7 @@ def nextheadxy(snake, action, direction):
             direction = [0,0,1,0]
     
     nheadpos = (nx, ny)
-    nheadpos = tuple(map(lambda x: x.int(), nheadpos)) #remove when testing manually!
+    nheadpos = tuple(map(lambda x: x.int(), nheadpos)) #remove when testing manually!(when uncommenting from line 252)
     return ((nx < snake.size(0)) and (nx >= 0) and (ny < snake.size(1)) and (ny >= 0)), (x,y), nheadpos, direction
 
 def getsnake(snake, headpos):
